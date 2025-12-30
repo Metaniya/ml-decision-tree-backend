@@ -2,9 +2,19 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
+
 
 # Create FastAPI app
 app = FastAPI(title="Dog Happiness Prediction API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # allow all for now (ok for project)
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 # Load Decision Tree model and scaler
 model = joblib.load("decision_tree_model.pkl")
