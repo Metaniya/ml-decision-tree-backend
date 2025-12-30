@@ -1,6 +1,6 @@
 # Force updated build tools first
 pip>=23.2
-setuptools>=68.0.0
+setuptools>=67.0.0
 wheel>=0.40.0
 
 # Core dependencies
