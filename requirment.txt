@@ -1,3 +1,6 @@
+pip>=23.2
+setuptools>=68.0
+wheel
 fastapi==0.101.0
 uvicorn==0.22.0
 numpy==1.25.2
