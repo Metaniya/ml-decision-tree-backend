@@ -1,7 +1,7 @@
 # Force updated build tools first
 pip>=23.2
-setuptools>=68.0
-wheel
+setuptools>=68.0.0
+wheel>=0.40.0
 
 # Core dependencies
 fastapi>=0.105.0
